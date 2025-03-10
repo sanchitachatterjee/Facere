@@ -1,0 +1,141 @@
+.cartItems{
+    margin:100px ;
+}
+
+.cartItems hr{
+    height:3px;
+    background:#d992f6;
+    border:0;
+}
+
+.cartitems-format-main{
+    display:grid;
+    grid-template-columns:0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap:75px;
+    padding: 20px 0px;
+    color: #441457;
+    font-size:18px;
+    font-weight: 600;
+    margin-left:20px;
+}
+
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left:20px;
+}
+
+.cart-productIcon{
+    height: 62px;
+}
+
+.cartItems-removeIcon{
+    width:15px;
+    margin : 0px 40px;
+    cursor: pointer;
+}
+
+.cartItems-quantity{
+  width:54px;
+  height:30px;
+  border: 2px solid #441457;
+  background: #d994f5;
+  color:#441457;
+}
+
+
+.cartItems-down{
+    display:flex;
+    margin:100px 0px 0px 50px;
+}
+
+.cartItems-total{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap:40px;
+}
+
+.total-item{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 0;
+}
+
+.cartItems-total button{
+ width:262px;
+ height:55px;
+ outline:none;
+ border:none;
+ background: #d992f6;
+ color:#441457;
+ font-size:16px;
+ border-radius:0;
+ border:2px solid #441457;
+}
+
+.promo-code{
+    flex:1;
+    font-size: 16px;
+}
+
+.promo-code p{
+    color:#441457;
+}
+
+.promo-box{
+  width:504px;
+  margin-top: 15px;
+  padding-left: 20px;
+  height: 58px;
+  background-color: #e7c8f3;
+  border: 2px solid #441457;
+  border-right: 2px solid #d992f6;
+  display: flex;
+}
+
+.promo-box input{
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size:16px;
+    width:330px;
+    height: 50px;
+    
+}
+
+.promo-box button{
+    width: 170px;
+    height:100%;
+    font-size: 22px;
+    background: #441457;
+    color: white;
+    cursor: pointer;
+    border-radius:2px;
+    border-left: 2px solid #441457;
+    border-right: 2px solid #441457;
+}
+
+.promo-box button:hover{
+    background: #d992f6;
+    color: #441457;
+    border:none;
+    border-left: 2px solid #441457;
+    border-right: 2px solid #441457;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px; 
+  }
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.5); 
+    border-radius: 5px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background:#441457; 
+ }
