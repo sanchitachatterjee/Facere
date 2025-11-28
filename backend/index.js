@@ -8,13 +8,8 @@ const path= require("path");
 const cors=require("cors");
 const { error } = require("console");
 const { AsyncLocalStorage } = require("async_hooks");
-
-
 app.use(express.json())
 app.use(cors());
-
-
-
 mongoose.connect("mongodb+srv://sanchitachatterjee42:%23Richomku09@cluster0.opr09.mongodb.net/Facere?retryWrites=true&w=majority&tls=true", 
     {
         tlsInsecure: true, // Allows insecure TLS connections
@@ -142,8 +137,6 @@ app.get('/allproducts', async(req,res)=>{
   res.send(products);
 })
 
-
-
 //Schema creating for user model
 
 const Users= mongoose.model('Users',{
@@ -246,17 +239,17 @@ const fetchUser = async (req, res, next) => {
     const token = req.header("auth-token");
 
     if (!token) {
-        console.log("❌ No token received");
+        console.log("No token received");
         return res.status(401).json({ error: "Access Denied: No token provided" });
     }
 
     try {
         const data = jwt.verify(token, 'secret_ecom');
         req.user = data.user;
-        console.log("✅ Token Verified, User ID:", req.user.id);
+        console.log("Token Verified, User ID:", req.user.id);
         next();
     } catch (error) {
-        console.error("❌ Token verification failed:", error.message);
+        console.error("Token verification failed:", error.message);
         return res.status(401).json({ error: "Access Denied: Invalid token" });
     }
 };
