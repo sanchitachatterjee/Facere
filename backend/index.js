@@ -10,7 +10,7 @@ const { error } = require("console");
 const { AsyncLocalStorage } = require("async_hooks");
 app.use(express.json())
 app.use(cors());
-mongoose.connect("mongodb+srv://sanchitachatterjee42:%23Richomku09@cluster0.opr09.mongodb.net/Facere?retryWrites=true&w=majority&tls=true", 
+mongoose.connect("mongodb+srv://sanchitachatterjee42:********@cluster0.opr09.mongodb.net/Facere?retryWrites=true&w=majority&tls=true", 
     {
         tlsInsecure: true, // Allows insecure TLS connections
         connectTimeoutMS: 30000, // Increase timeout to 30s
