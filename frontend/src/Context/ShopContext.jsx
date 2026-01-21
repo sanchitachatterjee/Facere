@@ -27,10 +27,10 @@ const ShopContextProvider = (props) => {
     const fetchUpdatedCart = () => {
         const token = localStorage.getItem("auth-token");
         
-        console.log("🔍 Checking Token:", token);  // Debug log
+        console.log(" Checking Token:", token);  // Debug log
         
         if (!token) {
-            console.error("❌ No auth-token found in localStorage. User might be logged out.");
+            console.error(" No auth-token found in localStorage. User might be logged out.");
             return;
         }
     
